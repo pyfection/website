@@ -23,11 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'kmprj1(+m0$5!v)kf9^6-063viq0xzqvwu6n%%ls4)=_9l3lo0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'pyfection.pythonanywhere.com',
     'www.pyfection.com',
+    '127.0.0.1',
+    'localhost',
 ]
 
 
