@@ -64,8 +64,68 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Who I am</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>I am a passionate Pythoista who loves to meet new people. I think my personality reflects in my code. If you look at it you will see that I am not an architect, I am a diamond cutter. I don't build my code with every detail planned out but rather follow the general direction and take every opportunity on the way to make it better, even to a point of perfection, if I get the time to do so.
-    </p>
+    <p>Hi, nice to meet you! So you want to know why you should hire me. Well, let me tell you. When I work on an interesting project, then I forget the world around me and think only about the code. I am versatile, so from quick and dirty to fully documented, everything goes. If this made you curious, just drop an email or call me and we can talk about your project, or also about good movies, languages or anything you like (I am serious, I always love to meet nice people).</p>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">How I came to be</h3>
+    <h4 class="w3-padding-16 w3-text-light-grey">Through work</h4>
+
+    <div class="w3-accordion">
+      <!-- RTS -->
+      <button onclick="open_accordion('rts_desc')" class="w3-btn-block w3-left-align w3-text-grey">
+        <p>11/2015 - 12/2016</p>
+        <h5 class="w3-text-light-grey"><b>Project Developer</b></h5>
+        <h6 class="w3-text-light-grey">RTS Services</h6>
+        <p class=w3-tiny>click for more</p>
+      </button>
+      <div id="rts_desc" class="w3-accordion-content w3-container">
+        <p>I was hired to take the pain off of our customer support by automating their tasks. Later on I switched to another section in which I was tasked to initiate and automate our new systems (Pipedrive [see project "pypedriver"] and Salesforce). I was also tasked to create reports from the data that we got from those systems.</p>
+      </div>
+
+      <!-- BMW -->
+      <button onclick="open_accordion('bmw_desc')" class="w3-btn-block w3-left-align w3-text-grey">
+        <p>09/2014 - 08/2015</p>
+        <h5 class="w3-text-light-grey"><b>Electric Motor Tester</b></h5>
+        <h6 class="w3-text-light-grey">BMW AG</h6>
+        <p class=w3-tiny>click for more</p>
+      </button>
+      <div id="bmw_desc" class="w3-accordion-content w3-container">
+        <p>I was responsible for manually inspecting motors and for running tests on them. Even though this job was very different, I am glad that I was able to do it. It was a revealing time for me, because I experienced what teamwork and hard work really means.</p>
+      </div>
+
+      <!-- Team Internet -->
+      <button onclick="open_accordion('tiag_desc')" class="w3-btn-block w3-left-align w3-text-grey">
+        <p>12/2013 - 02/2014</p>
+        <h5 class="w3-text-light-grey"><b>Software Developer</b></h5>
+        <h6 class="w3-text-light-grey">Team Internet AG</h6>
+        <p class=w3-tiny>click for more</p>
+      </button>
+      <div id="tiag_desc" class="w3-accordion-content w3-container">
+        <p>During those three months I was trained in node.js through an online course. I did not enjoy the syntax. I am a true believer in the Zen of Python, and node.js just work exactly the opposite way. Because of this and other personal reasons I soon left the company again.</p>
+      </div>
+
+      <!-- CONTENTSERV -->
+      <button onclick="open_accordion('contentserv_desc')" class="w3-btn-block w3-left-align w3-text-grey">
+        <p>08/2012 - 07/2013</p>
+        <h5 class="w3-text-light-grey"><b>Project Developer</b></h5>
+        <h6 class="w3-text-light-grey">CONTENTSERV GmbH</h6>
+        <p class=w3-tiny>click for more</p>
+      </button>
+      <div id="contentserv_desc" class="w3-accordion-content w3-container">
+        <p>This company is selling a CMS software, written in PHP with a custom PHP framework. For the first few months I was in the section which took customer requests and added them to our software. We tested our own code with pair review and at the end a QA took place, in which I was tasked to "break" the code (I guess I have a talent for that). In the last few months I was additionally tasked to connect our API with the Adobe Indesign API over a C-like scripting language. Version control was done with SVN.</p>
+      </div>
+
+      <!-- DIS -->
+      <button onclick="open_accordion('dis_desc')" class="w3-btn-block w3-left-align w3-text-grey">
+        <p>09/2009 - 07/2012</p>
+        <h5 class="w3-text-light-grey"><b>Fachinformatiker für Anwendungsentwicklung</b></h5>
+        <h6 class="w3-text-light-grey">DIS AG</h6>
+        <p class=w3-tiny>click for more</p>
+      </button>
+      <div id="dis_desc" class="w3-accordion-content w3-container">
+        <p>I started as "Systemintegrator" and in the last year I changed to "Anwendungsentwickler". I learned how to set up and maintain networks. I was tasked to take calls from our non-tech staff and help them with their daily computer issues. Later on, in my third year, I switched to maintain and implement new features in our internal CRM system, which was written in VBA.</p>
+      </div>
+    </div>
+    
     <h3 class="w3-padding-16 w3-text-light-grey">What I do</h3>
     <p class="w3-wide">App Development (for all platforms)</p>
     <div class="w3-progress-container">
@@ -164,15 +224,29 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for projects -->
-    <div class="w3-row">
-      <div class="w3-half">
+    <ul class="w3-ul">
+      <li>
+        <a href="https://github.com/matumaros/boarbar">boar.bar</a>
+        <p class="w3-text-grey">A website written in Python with Django and Bootstrap to preserve and develop the Bavarian language.</p>
+      </li>
+      <li>
+        <a href="https://github.com/matumaros/BomberApe">BomberApe</a>
+        <p class="w3-text-grey">A Bomberman game in Python with Kivy which uses ANNs.</p>
+      </li>
+      <li>
+        <a href="https://github.com/pyfection/neuravolve">neuravolve</a>
+        <p class="w3-text-grey">A prototype for an artificial neural network (ANN) in Python.</p>
+      </li>
+      <li>
         <a href="https://github.com/pyfection/website">Pyfection Website</a>
-      </div>
-
-      <div class="w3-half">
-      </div>
+        <p class="w3-text-grey">Written with Python, Django and W3.CSS.</p>
+      </li>
+      <li>
+        <a href="https://github.com/matumaros/pypedriver">pypedriver</a>
+        <p class="w3-text-grey">A Python client for Pipedrive.</p>
+      </li>
     <!-- End project grid -->
-    </div>
+    </ul>
   <!-- End Portfolio Section -->
   </div>
 
@@ -212,3 +286,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 </body>
 </html>
+
+
+<script>
+function open_accordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
